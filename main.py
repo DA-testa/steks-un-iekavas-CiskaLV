@@ -20,7 +20,6 @@ def find_mismatch(text):
         if next in ")]}":
             # Process closing bracket, write your code here
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
-                print("in here")
                 break
             pass
 
@@ -31,8 +30,8 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if (text[0] != "I"):
-        text = "I" + text
+    # if (text[0] != "I"):
+    #     text = "I" + text
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
     print(mismatch[-1].position if mismatch else "Success")
