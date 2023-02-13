@@ -30,11 +30,11 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if text.find("I") != -1:
-        text = input()
-        mismatch = find_mismatch(text)
-        # Printing answer, write your code here
-        print(mismatch[-1].position if mismatch else "Success")
+    # if text.find("I") != -1:
+    #     text = input()
+    mismatch = find_mismatch(text)
+    # Printing answer, write your code here
+    print(mismatch[-1].position if mismatch else "Success")
 
 
 if __name__ == "__main__":
