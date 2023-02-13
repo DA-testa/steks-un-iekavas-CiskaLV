@@ -32,7 +32,7 @@ def main():
     text = input()
     if text.find("I") != -1:
         text = input()
-    print(text)
+    text = text.strip()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
     print(mismatch[-1].position if mismatch else "Success")
